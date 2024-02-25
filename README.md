@@ -1,7 +1,7 @@
-GET Request
+GET Request : 
 curl --location 'http://localhost:8080/api/country/getByCountryCodeAndName?currency=USD&currencyCode=133'
 
-PUT Request
+PUT Request : 
 curl --location --request PUT 'http://localhost:8080/api/country/update' \
 --header 'Content-Type: application/json' \
 --data '{
