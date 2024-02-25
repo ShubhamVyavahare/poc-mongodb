@@ -18,9 +18,9 @@ public class CountryDetailsController {
         return countryDetailsService.createUpdateCountry(country);
     }
 
-    @PostMapping("/getByCountryCodeAndName")
-    public Country fetchCountryDetailsById(@RequestBody CountryId countryId) {
-        return countryDetailsService.fetchCountryDetailsByIdAndName(countryId);
+    @GetMapping("/getByCountryCodeAndName")
+    public Country fetchCountryDetailsById(@RequestParam String currency, @RequestParam String currencyCode) {
+        return countryDetailsService.fetchCountryDetailsByIdAndName(currency, currencyCode);
     }
 
 }
